@@ -1,0 +1,16 @@
+{
+    "usuarios": [
+        {
+            "id": 0,
+            "nombre": "Salva",
+            "apellido": "Gallego",
+            "nUsuario": "Salvagr"
+        },
+        {
+            "id": 1,
+            "nombre": "Rebeca",
+            "apellido": "Lloret",
+            "nUsuario": "Rebe"
+        }
+    ]
+}
