@@ -1,0 +1,11 @@
+*,
+::after,
+::before {
+    @include espaciadoEstandar(0px, 0px);
+    font: {
+        size: $tamanyoFuenteEstandar;
+        weight: 300;
+        family: $tipoFuente;
+    }
+    color: $colorPrincipal;
+}
