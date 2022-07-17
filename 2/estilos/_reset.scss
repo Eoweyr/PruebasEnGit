@@ -1,0 +1,9 @@
+*,
+::after,
+::before {
+    @include espaciadoEstandar(0px, 0px);
+    font: {
+        family: $fuenteFamilia;
+        size: $fuenteTamañoCuerpo;
+    }
+}
