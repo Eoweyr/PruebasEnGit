@@ -1,0 +1,4 @@
+@mixin espaciado ($pad: 0px, $marg: 0px) {
+    padding: $pad;
+    margin: $marg;
+}
