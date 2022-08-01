@@ -1,0 +1,21 @@
+<template id="plantilla">
+    <p>Hola caracola</p>
+
+</template>
+
+<script>
+
+class navComp extends HTMLAreaElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        console.log("hola");
+    }
+}
+
+window.customElements.define("nav-componente", navComp);
+
+
+</script>

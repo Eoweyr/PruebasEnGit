@@ -1,0 +1,20 @@
+{
+  "name": "mpf",
+  "version": "1.0.0",
+  "description": "Aplicación para la gestión del transporte",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "eoweyr"
+  },
+  "author": "Salvador Gallego Raga",
+  "license": "ISC",
+  "dependencies": {
+    "18": "^0.0.0",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security"
+  }
+}

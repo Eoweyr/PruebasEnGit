@@ -7,6 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 let navComponente = class navComponente extends HTMLElement {
     connectedCallback() {
+        let itemsMenu = [];
+        itemsMenu = ["Características", "Servicios", "Contrata", "Contacto", "Hola"];
+        let accionesNav = document.getElementById("accionesNav");
+        itemsMenu.forEach(element => {
+            console.log(element);
+        });
     }
 };
 navComponente = __decorate([
@@ -20,7 +26,7 @@ navComponente = __decorate([
 
         .navMain {
             width: 100%;
-            height: 40px;
+            height: 50px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -29,7 +35,7 @@ navComponente = __decorate([
             background-color: black;
         }
 
-        .acciones {
+        .accionesNav {
             width: 500px;
             display: flex;
             flex-direction: row;
@@ -43,7 +49,9 @@ navComponente = __decorate([
 
         button {
             margin-right: 20px;
-            padding: 6px;
+            width: 100px;
+            height: 36px;
+            font-size: 16px;
             color: white;
             background-color: black;
             border: 2px solid white;
@@ -56,13 +64,13 @@ navComponente = __decorate([
         }
         `,
         plantilla: `
-        <div class="navMain">
+        <div class="navMain" id="navMain">
             <div class="nombreEmpresa">MPF</div>
-            <div class="acciones">
-                <div>Características</div>
+            <div class="accionesNav" id="accionesNav">
+                <!--<div>Características</div>
                 <div>Servicios</div>
                 <div>Contrata</div>
-                <div>Contacto</div>
+                <div>Contacto</div>-->
             </div>
             <button type="button">Acceder</button>
         </div>

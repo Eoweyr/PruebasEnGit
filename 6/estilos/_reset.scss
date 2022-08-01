@@ -1,0 +1,13 @@
+*,
+::after,
+::before {
+    @include espaciado (0px, 0px);
+    color: $colorPrincipal;
+    font: {
+        family: $fuenteFamilia;
+        size: $fuenteTamañoCuerpo;
+        weight: 300;
+    }
+    text-decoration: none;
+    box-sizing: border-box;
+}

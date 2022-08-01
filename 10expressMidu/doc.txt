@@ -1,0 +1,36 @@
+Desarrollado siguiento del vídeo de Midudev:
+https://www.youtube.com/watch?v=ZpY5KdGQvwI&t=3809s
+
+npm init -y 
+npm install typescript -D
+
+En el package.json:
+    Crear un script para typescript:
+    "scripts": {
+        "tsc": 
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+    Ejecutamos el script:
+    npm run tsc -- --init
+
+    configuramos el tsconfig.json
+
+Instalción de dependencias:
+    npm install express -E  --> La -E hace refercencia a una copia exacta.
+
+Creamos el directorio:
+    /source
+
+Y en el interior el archivo:
+    /source/index.ts
+
+Solucioando el error:
+    import express from 'express'  --> No reconoce express y es por el tipado. Hay que descargar un tipo.
+
+    npm i @types/express -D
+
+    
+
+
+

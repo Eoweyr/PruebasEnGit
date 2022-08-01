@@ -9,7 +9,7 @@
 
         .navMain {
             width: 100%;
-            height: 40px;
+            height: 50px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -18,7 +18,7 @@
             background-color: black;
         }
 
-        .acciones {
+        .accionesNav {
             width: 500px;
             display: flex;
             flex-direction: row;
@@ -32,7 +32,9 @@
 
         button {
             margin-right: 20px;
-            padding: 6px;
+            width: 100px;
+            height: 36px;
+            font-size: 16px;
             color: white;
             background-color: black;
             border: 2px solid white;
@@ -45,13 +47,13 @@
         }
         `,
     plantilla: `
-        <div class="navMain">
+        <div class="navMain" id="navMain">
             <div class="nombreEmpresa">MPF</div>
-            <div class="acciones">
-                <div>Características</div>
+            <div class="accionesNav" id="accionesNav">
+                <!--<div>Características</div>
                 <div>Servicios</div>
                 <div>Contrata</div>
-                <div>Contacto</div>
+                <div>Contacto</div>-->
             </div>
             <button type="button">Acceder</button>
         </div>
@@ -62,6 +64,21 @@
 class navComponente extends HTMLElement {
 
     connectedCallback() {
+
+        let itemsMenu: string[] = [];
+        itemsMenu = ["Características", "Servicios", "Contrata", "Contacto", "Hola"];
+
+        let accionesNav = shadowRoot.getElementById("accionesNav");
+        
+        itemsMenu.forEach(element => {
+            console.log(element);
+
+            let div = this.shadowRoot.createElement("div");
+            div.innerHTML = element;
+            accionesNav.appendChild(div);
+
+
+        });
         
     }
 }

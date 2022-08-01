@@ -1,0 +1,13 @@
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: 0;
+}/*# sourceMappingURL=index.css.map */
