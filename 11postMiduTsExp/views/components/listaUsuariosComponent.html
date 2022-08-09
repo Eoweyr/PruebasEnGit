@@ -1,0 +1,15 @@
+<lista-usuarios></lista-usuarios>
+
+<script>
+    class listaUsuariosComp extends HTMLElement {
+        constructor() {
+            super();
+            this.attachShadow({ mode: 'open' });
+        }
+
+        connectedCallback() {
+
+        }
+    }
+    customElements.define("lista-usuarios", listaUsuariosComp);
+</script>

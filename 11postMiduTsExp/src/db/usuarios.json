@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "nombre": "Salva",
+      "correoElectronico": "salvagr@gmail.com",
+      "contrasenya": "1234",
+      "rol": "Administrativo"
+    },
+    {
+      "id": 2,
+      "nombre": "Salva",
+      "correoElectronico": "salvagr@gmail.com",
+      "contrasenya": "1234",
+      "rol": "Administrativo"
+    },
+    {
+      "id": 3,
+      "nombre": "Salva",
+      "correoElectronico": "salvagr@gmail.com",
+      "contrasenya": "1234",
+      "rol": "Administrativo"
+    }
+  ]

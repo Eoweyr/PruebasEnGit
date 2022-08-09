@@ -7,8 +7,7 @@ npm install typescript -D
 En el package.json:
     Crear un script para typescript:
     "scripts": {
-        "tsc": 
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "tsc": "tsc"
     },
 
     Ejecutamos el script:
@@ -30,7 +29,63 @@ Solucioando el error:
 
     npm i @types/express -D
 
+Probando que compila sin errores
+    npm run tsc
+
+Creamos el escript para inicializar el servidor:
+    "start": "node build/index.js" --> Se accede con: npm start
+
+Instalamos para automatización en el guardado:
+    npm install ts-node-dev -D
+
+    Creamos un escript para automatizar el guardado y reinicio del servidor cada vez que guardamos un archivo:
+        "dev": "ts-node-dev source/index.ts" --> Se accede con npm run dev
+
+Creamos el directorio routes:
+    /routes
+
+    Y dentro el archivo:
+    /routes/diaries.ts
+
+    En diaries.ts creamos el router y dos end-points básicos que iremos modificando:
+
+        import express from 'express'
+        const router = express.Router()
+
+        router.get('/', (req, res) => {
+        })
+
+        router.post('/', (req, res) => {
+        })
+
+        export default router
+
+Volvemos a index.ts e importamos el router, luego indicamos donde lo queremos usar:
+    import diaryRouter from './routes/diaries'
+    app.use('/api/diaries', diaryRouter)
+
+Creamos la siguiente carpeta y archivos para separar la lógica:
+    /services
+        diary.json
+        diatyServices.ts
+
+Instalamos ts-standar para controlar fallos de ; de tabulaciones etc. Es como una especie de eslint...
+    npm install ts-standard -D
+
+    Creamos el script en package.json
+    "lint": "ts-standard",
+
+    Ejecutamos:
+    npm run lint
+
+    Para que además nos muestre en el documento los posibles errores a parte de en el el terminal debemos añadir un eslintconfig al package.json
+    (siempre con ese nobre ya que es el que busca node):
     
+    "eslintConfig": {
+        "parserOptions": {
+            "project": "./tsconfig.json"
+            },
+        "extendes": "./node_modules/ts-satandard/eslintrc.json"
+    }
 
-
-
+Usamos Thunder Client para probar las peticiones get y post
